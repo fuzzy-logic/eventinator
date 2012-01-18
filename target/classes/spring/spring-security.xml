@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+             xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+          http://www.springframework.org/schema/security
+          http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+
+    <authentication-manager>
+        <authentication-provider>
+            <user-service>
+                <user name="user" password="user" authorities="ROLE_USER"></user>
+                <user name="api" password="api" authorities="ROLE_APIUSER"></user>
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+
+    <http pattern="/customerService/**" security="none">
+
+    </http>
+
+    <!--<http pattern="/customerService/api/**" create-session="stateless" realm="Customer Service API">-->
+        <!--<http-basic />-->
+        <!--<intercept-url pattern="/**" access="ROLE_APIUSER"/>-->
+    <!--</http>-->
+
+    <!--<http create-session="ifRequired">-->
+        <!--<intercept-url pattern="/customerService/**" access="ROLE_USER"/>-->
+        <!--<form-login login-page="/customerService/login"-->
+                    <!--always-use-default-target="false"-->
+                    <!--default-target-url="/customerService/"-->
+                    <!--authentication-failure-url="/customerService/login?login_error=true"-->
+                    <!--password-parameter="password"-->
+                    <!--username-parameter="username"/>-->
+    <!--</http>-->
+
+</beans:beans>

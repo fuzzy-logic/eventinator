@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/data/mongo
+        http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
+
+    <mongo:mongo id="mongo"/>
+
+
+    <bean id="commonRepository" class="com.netaporter.eventinator.repos.CommonRepository"></bean>
+
+    <bean id="mongoTemplateEvent" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="databaseName" value="eventdb"/>
+        <constructor-arg name="mongo" ref="mongo"/>
+    </bean>
+
+    <mongo:repositories base-package="com.netaporter.eventinator.repos" mongo-template-ref="mongoTemplateEvent"/>
+
+
+     <bean id="eventHandler" class="com.netaporter.eventinator.service.GenericEventProcessor">
+            <property name="commandFactory" ref="commandFactory"/>
+    </bean>
+
+
+
+   <bean id="commandFactory" class="com.netaporter.eventinator.factory.GenericCommandFactory">
+   </bean>
+
+</beans>
