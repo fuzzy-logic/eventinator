@@ -1,8 +1,8 @@
 package com.netaporter.eventinator.command;
 
-import com.netaporter.customerservice.customer.Customer;
-import com.netaporter.customerservice.customer.builder.CustomerBuilder;
-import com.netaporter.eventinator.command.VersionIncrementor;
+import com.netaporter.eventinator.domain.VersionIncrementor;
+import com.netaporter.eventinator.test.customer.builder.CustomerBuilder;
+import com.netaporter.eventinator.test.customer.model.Customer;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,19 +1,25 @@
 package com.netaporter.eventinator.test.customer.model;
 
 
-import com.netaporter.eventinator.model.AbstractDomainObject;
 import com.netaporter.eventinator.test.customer.builder.CustomerBuilder;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
+
+import java.io.Serializable;
 
 /**
  * User: Chris Wright [chris.wright@net-a-porter.com]
  * Date: 05/01/12
  * Time: 16:48
  */
-public class Customer extends AbstractDomainObject {
+public class Customer {
 
 
     @Indexed(unique = true)
+     @Id
+    protected Serializable id;
+    protected int version;
+    protected boolean deleted = false;
     private final String emailAddress;
     private final String name;
     private final int age;
@@ -29,7 +35,7 @@ public class Customer extends AbstractDomainObject {
     }
 
     public Customer(String emailAddress, String name, int age) {
-        super("");
+
         this.emailAddress = emailAddress;
         this.name = name;
         this.age = age;
@@ -40,7 +46,7 @@ public class Customer extends AbstractDomainObject {
     }
 
     public Customer(CustomerBuilder builder) {
-        super(builder.getId());
+        this.id = builder.getId();
        this.emailAddress = builder.getEmail();
         this.name = builder.getName();
         this.dob = builder.getDob();
@@ -76,5 +82,10 @@ public class Customer extends AbstractDomainObject {
 
     public boolean isDeleted() {
         return deleted;
+    }
+
+
+    public Serializable getId() {
+        return id;
     }
 }

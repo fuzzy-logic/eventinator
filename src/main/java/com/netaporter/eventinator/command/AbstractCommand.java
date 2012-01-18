@@ -1,12 +1,12 @@
 package com.netaporter.eventinator.command;
 
+import com.netaporter.eventinator.domain.VersionIncrementor;
 import com.netaporter.eventinator.event.Event;
-import com.netaporter.eventinator.model.DomainObject;
 
 /**
  * User: gawain
  */
-public abstract class AbstractCommand<E extends Event, O extends DomainObject> implements Command<O> {
+public abstract class AbstractCommand<E extends Event, O> implements Command<O> {
 
     private final E event;
     private final O domainObject;
@@ -36,7 +36,11 @@ public abstract class AbstractCommand<E extends Event, O extends DomainObject> i
         E event = getEvent();
         O domainObject = getDomainObject();
         O newObject = applyCommand(event, domainObject);
-        incrementor.incrementVersion(newObject); //automagically increment the version number so no one forgets
+        if (newObject != null) {
+             //object is null if deleted. so check above
+             //automagically increment the version number so no one forgets
+            incrementor.incrementVersion(newObject);
+        }
         return newObject;
     }
 

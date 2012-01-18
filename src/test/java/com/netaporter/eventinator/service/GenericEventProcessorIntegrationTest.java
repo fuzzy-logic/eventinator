@@ -3,6 +3,7 @@ package com.netaporter.eventinator.service;
 
 import com.netaporter.eventinator.repos.EventRepository;
 import com.netaporter.eventinator.test.customer.events.ChangeCustomerNameEvent;
+import com.netaporter.eventinator.test.customer.events.DeleteCustomerEvent;
 import com.netaporter.eventinator.test.customer.events.NewCustomerEvent;
 import com.netaporter.eventinator.test.customer.model.Customer;
 import com.netaporter.eventinator.test.customer.repositories.CustomerRepository;
@@ -31,9 +32,9 @@ public class GenericEventProcessorIntegrationTest {
 
     @Autowired
     //@Qualifier("customerRepository")
-    CustomerRepository customerRepository;
+            CustomerRepository customerRepository;
 
-     @Autowired
+    @Autowired
     @Qualifier("eventRepository")
     EventRepository eventRepository;
 
@@ -42,7 +43,6 @@ public class GenericEventProcessorIntegrationTest {
         customerRepository.deleteAll();
         eventRepository.deleteAll();
     }
-
 
 
     @Test
@@ -54,7 +54,31 @@ public class GenericEventProcessorIntegrationTest {
         event.setNewPassword("changeme");
         event.setDomainObjectId("123");
         boolean eventOk = customerEventHandler.handleEvent(event);
+        Customer customer = customerRepository.findById("123");
         Assert.assertTrue(eventOk);
+        Assert.assertNotNull(customer);
+    }
+
+    @Test
+    public void testCustomerShouldBeDeleted() {
+        NewCustomerEvent event = new NewCustomerEvent();
+        event.setNewName("new name");
+        event.setNewDob("10/04/1928");
+        event.setNewEmail("test@test.com");
+        event.setNewPassword("changeme");
+        event.setDomainObjectId("123");
+        boolean eventOk = customerEventHandler.handleEvent(event);
+        Customer customer = customerRepository.findById("123");
+        Assert.assertTrue(eventOk);
+        Assert.assertNotNull(customer);
+
+
+        DeleteCustomerEvent deleteEvent = new DeleteCustomerEvent();
+        deleteEvent.setDomainObjectId("123");
+        boolean deleteEventOk = customerEventHandler.handleEvent(deleteEvent);
+        customer = customerRepository.findById("123");
+        Assert.assertTrue(eventOk);
+        Assert.assertNull(customer);
     }
 
 
@@ -91,6 +115,7 @@ public class GenericEventProcessorIntegrationTest {
         event2.setNewName(name2);
         event2.setDomainObjectId(id);
         event2.setDomainObjectVersion(2);
+        event2.setCreatorEmail("gawain.hammond@gmail.com");
         boolean event2_OK = customerEventHandler.handleEvent(event2);
         customer = customerRepository.findOne(id);
         Assert.assertTrue(event2_OK);
@@ -105,6 +130,7 @@ public class GenericEventProcessorIntegrationTest {
         event3.setNewName(name3);
         event3.setDomainObjectVersion(1);
         event3.setDomainObjectId(id);
+        event3.setCreatorEmail("gawain.hammond@gmail.com");
         boolean event3_OK = customerEventHandler.handleEvent(event3);
         customer = customerRepository.findOne(id);
         Assert.assertTrue(event3_OK);
@@ -118,6 +144,7 @@ public class GenericEventProcessorIntegrationTest {
         event4.setNewName(name4);
         event4.setDomainObjectVersion(4);
         event4.setDomainObjectId(id);
+        event4.setCreatorEmail("gawain.hammond@gmail.com");
         boolean event4_OK = customerEventHandler.handleEvent(event4);
         customer = customerRepository.findOne(id);
         Assert.assertTrue(event4_OK);

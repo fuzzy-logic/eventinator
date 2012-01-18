@@ -15,12 +15,12 @@ public class GenericCommandFactory implements  CommandFactory {
 
 
     @Override
-     public Command createCommand(Event event, DomainObject domainObject) {
+     public Command createCommand(Event event, Object domainObject) {
         Command command = getCommand(event, domainObject);
         return command;
     }
 
-    private Command getCommand(Event event, DomainObject domainObject) {
+    private Command getCommand(Event event, Object domainObject) {
         Class aClass = event.getCommandClass();
         try {
             Constructor constructor = aClass.getConstructors()[0];
@@ -33,12 +33,4 @@ public class GenericCommandFactory implements  CommandFactory {
         }
     }
 
-
-/*    public void setCommandMap(Map<Event, AbstractCommand> commandMap) {
-        this.commandMap = new HashMap<Class, AbstractCommand>();
-        for (Map.Entry<Event, AbstractCommand> entry : commandMap.entrySet()) {
-            Class classType = entry.getKey().getClass();
-             this.commandMap.put(classType, entry.getValue());
-        }
-    }*/
 }

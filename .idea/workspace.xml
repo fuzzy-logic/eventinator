@@ -2,21 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6b24d3-4d25-40b2-bcfe-09961a2c092e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_2_7_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_6_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_core_1_2_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_1_0_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_3_1_0_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eventinator.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/test-customer-domain-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/DeleteObjectCommand.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/DeletedDomainWrapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/ObjectFieldRetriever.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/VersionIncrementor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/domain/ObjectFieldRetrieverUnitTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/VersionIncrementor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/model/AbstractDomainObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/model/DomainObject.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/commands/DeleteCustomerCommand.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/eventinator/command/VersionIncrementor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/eventinator/model/AbstractDomainObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/eventinator/model/DomainObject.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/eventinator/repos/CommonRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/netaporter/eventinator/test/customer/commands/DeleteCustomerCommand.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/repos/CommonRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/repos/DomainRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventinator.iml" afterPath="$PROJECT_DIR$/eventinator.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/AbstractCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/AbstractCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/factory/CommandFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/factory/CommandFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/factory/GenericCommandFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/factory/GenericCommandFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/service/GenericEventProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/service/GenericEventProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/command/VersionIncrementorTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/command/VersionIncrementorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorIntegrationTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorUnitTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorUnitTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/builder/CustomerBuilder.java" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/builder/CustomerBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/events/DeleteCustomerEvent.java" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/events/DeleteCustomerEvent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/model/Customer.java" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/model/Customer.java" />
     </list>
     <ignored path="eventinator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,6 +49,21 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/service/GenericEventProcessor.java" line="36" class="com.netaporter.eventinator.service.GenericEventProcessor" package="com.netaporter.eventinator.service">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -75,10 +104,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GenericEventProcessorIntegrationTest.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GenericEventProcessorIntegrationTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0">
+            <state line="27" column="30" selection-start="1128" selection-end="1164" vertical-scroll-proportion="0.5655488">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,10 +115,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractDomainObject.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/model/AbstractDomainObject.java">
+      <file leaf-file-name="AbstractCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/AbstractCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="42" selection-start="325" selection-end="325" vertical-scroll-proportion="0.37815127">
+            <state line="39" column="56" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VersionIncrementorTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/command/VersionIncrementorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="19" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VersionIncrementor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/VersionIncrementor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericEventProcessor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/service/GenericEventProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="57" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeletedDomainWrapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/DeletedDomainWrapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="70" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteObjectCommand.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/DeleteObjectCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="24" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeleteCustomerEvent.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/events/DeleteCustomerEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="17" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,60 +191,17 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="10" selection-start="4466" selection-end="4466" vertical-scroll-proportion="0.0">
+            <state line="19" column="26" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README">
+      <file leaf-file-name="CustomerBuilder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/builder/CustomerBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="77" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0">
+            <state line="103" column="0" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test-customer-domain-context.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/test-customer-domain-context.xml">
-          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="93" selection-start="830" selection-end="830" vertical-scroll-proportion="-10.227273">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultListableBeanFactory.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.1.0.RELEASE/spring-beans-3.1.0.RELEASE.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="0" selection-start="9432" selection-end="9432" vertical-scroll-proportion="-14.92">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/repos/CommonRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="80" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/repositories/CustomerRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="8" selection-start="8" selection-end="61" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -170,21 +220,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/ObjectFieldRetriever.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/commands/ChangeCustomerPasswordCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/repos/DomainRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/model/Customer.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/builder/CustomerBuilder.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/commands/ChangeCustomerEmailCommand.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/commands/ChangeCustomerNameCommand.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/commands/DeleteCustomerCommand.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/commands/NewCustomerCommand.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorUnitTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/events/AbstractCustomerEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/event/AbstractEvent.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/repos/EventRepositoryIntegrationTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/src/test/resources/test-customer-domain-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/repos/CommonRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/DeletedDomainWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/event/DeleteObjectEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/event/DeleteCustomerEvent.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/events/DeleteCustomerEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/service/GenericEventProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/DeleteObjectCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/VersionIncrementor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/AbstractCommand.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/command/VersionIncrementorTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorIntegrationTest.java" />
       </list>
     </option>
@@ -297,6 +347,194 @@
               <option name="myItemId" value="eventinator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="customer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="customer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="customer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commands" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="command" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -371,6 +609,36 @@
               <option name="myItemId" value="eventinator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -398,7 +666,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
+              <option name="myItemId" value="event" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="command" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,17 +737,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Facets" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="project.structure.side.proportion" value="0.2989228" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
@@ -427,9 +756,14 @@
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/testdata/customer" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.netaporter.eventinator.event" />
+      <recent name="com.netaporter.eventinator.command" />
+      <recent name="com.netaporter.eventinator.domain" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.GenericEventProcessorIntegrationTest.testOutOfSequenceEventsShouldBeAppliedBackInOrder">
-    <configuration default="false" name="GenericEventProcessorIntegrationTest.testNewCustomerShouldBeCreated" type="JUnit" factoryName="JUnit" temporary="true">
+  <component name="RunManager" selected="JUnit.GenericEventProcessorIntegrationTest">
+    <configuration default="false" name="GenericEventProcessorIntegrationTest.testOutOfSequenceEventsShouldBeAppliedBackInOrder" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
           <option name="PATTERN" value="com.netaporter.eventinator.service.*" />
@@ -441,7 +775,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.netaporter.eventinator.service" />
       <option name="MAIN_CLASS_NAME" value="com.netaporter.eventinator.service.GenericEventProcessorIntegrationTest" />
-      <option name="METHOD_NAME" value="testNewCustomerShouldBeCreated" />
+      <option name="METHOD_NAME" value="testOutOfSequenceEventsShouldBeAppliedBackInOrder" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -457,7 +791,63 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="GenericEventProcessorIntegrationTest.testOutOfSequenceEventsShouldBeAppliedBackInOrder" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="ObjectFieldRetrieverUnitTest.test" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="com.netaporter.eventinator.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="eventinator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.netaporter.eventinator.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.netaporter.eventinator.domain.ObjectFieldRetrieverUnitTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="VersionIncrementorTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="com.netaporter.eventinator.command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="eventinator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.netaporter.eventinator.command" />
+      <option name="MAIN_CLASS_NAME" value="com.netaporter.eventinator.command.VersionIncrementorTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GenericEventProcessorIntegrationTest.testCustomerShouldBeDeleted" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
           <option name="PATTERN" value="com.netaporter.eventinator.service.*" />
@@ -469,8 +859,36 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.netaporter.eventinator.service" />
       <option name="MAIN_CLASS_NAME" value="com.netaporter.eventinator.service.GenericEventProcessorIntegrationTest" />
-      <option name="METHOD_NAME" value="testOutOfSequenceEventsShouldBeAppliedBackInOrder" />
+      <option name="METHOD_NAME" value="testCustomerShouldBeDeleted" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GenericEventProcessorIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="com.netaporter.eventinator.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="eventinator" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.netaporter.eventinator.service" />
+      <option name="MAIN_CLASS_NAME" value="com.netaporter.eventinator.service.GenericEventProcessorIntegrationTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -574,9 +992,12 @@
         <option name="PhingTarget" enabled="false" />
       </method>
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.GenericEventProcessorIntegrationTest.testNewCustomerShouldBeCreated" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.GenericEventProcessorIntegrationTest.testOutOfSequenceEventsShouldBeAppliedBackInOrder" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.GenericEventProcessorIntegrationTest.testOutOfSequenceEventsShouldBeAppliedBackInOrder" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ObjectFieldRetrieverUnitTest.test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.VersionIncrementorTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GenericEventProcessorIntegrationTest.testNewCustomerShouldBeCreatedAndDeleted" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GenericEventProcessorIntegrationTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -610,7 +1031,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1584" y="96" width="1641" height="1027" extended-state="0" />
+    <frame x="1570" y="78" width="1641" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -625,9 +1046,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19122933" sideWeight="0.4920635" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24497488" sideWeight="0.57755774" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24497488" sideWeight="0.77557755" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42244226" sideWeight="0.9993719" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22442244" sideWeight="0.9993719" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -683,132 +1104,136 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/commands/ChangeCustomerNameCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/factory/GenericCommandFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="96" selection-start="457" selection-end="457" vertical-scroll-proportion="0.0">
+        <state line="34" column="0" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/domain/ObjectFieldRetrieverUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="19" selection-start="363" selection-end="367" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/commands/ChangeCustomerPasswordCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/ObjectFieldRetriever.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="27" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
+        <state line="18" column="29" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/commands/DeleteCustomerCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+        <state line="12" column="27" selection-start="562" selection-end="562" vertical-scroll-proportion="-1.1489362">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/commands/NewCustomerCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/repos/DomainRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="22" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+        <state line="2" column="39" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/events/AbstractCustomerEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/model/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="55" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+        <state line="87" column="23" selection-start="1959" selection-end="1959" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/event/AbstractEvent.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/builder/CustomerBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="11" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
+        <state line="103" column="0" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/repos/EventRepositoryIntegrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="27" selection-start="4749" selection-end="4749" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="10" selection-start="4466" selection-end="4466" vertical-scroll-proportion="0.0">
+        <state line="19" column="26" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/DeletedDomainWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="77" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/repositories/CustomerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="61" vertical-scroll-proportion="0.0">
+        <state line="20" column="70" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/test-customer-domain-context.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/events/DeleteCustomerEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="93" selection-start="830" selection-end="830" vertical-scroll-proportion="-10.227273">
+        <state line="12" column="17" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/3.1.0.RELEASE/spring-beans-3.1.0.RELEASE.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/DeleteObjectCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="0" selection-start="9432" selection-end="9432" vertical-scroll-proportion="-14.92">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/repos/CommonRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="80" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
+        <state line="7" column="24" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/service/GenericEventProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="57" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/VersionIncrementor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/AbstractCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="56" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/command/VersionIncrementorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="19" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0">
+        <state line="27" column="30" selection-start="1128" selection-end="1164" vertical-scroll-proportion="0.5655488">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/model/AbstractDomainObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="42" selection-start="325" selection-end="325" vertical-scroll-proportion="0.37815127">
-          <folding />
         </state>
       </provider>
     </entry>

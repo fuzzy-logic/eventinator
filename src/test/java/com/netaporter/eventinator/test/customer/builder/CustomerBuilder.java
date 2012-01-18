@@ -101,4 +101,5 @@ public class CustomerBuilder implements Builder<Customer> {
     public int getVersion() {
         return version;
     }
+
 }

@@ -1,6 +1,6 @@
 package com.netaporter.eventinator.test.customer.events;
 
-import com.netaporter.eventinator.test.customer.commands.DeleteCustomerCommand;
+import com.netaporter.eventinator.command.DeleteObjectCommand;
 
 /**
  * User: gawain
@@ -9,7 +9,7 @@ public class DeleteCustomerEvent extends AbstractCustomerEvent {
 
     @Override
     public Class getCommandClass() {
-        return DeleteCustomerCommand.class;
+        return DeleteObjectCommand.class;
     }
 
 }

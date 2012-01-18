@@ -1,6 +1,5 @@
 package com.netaporter.eventinator.repos;
 
-import com.netaporter.eventinator.model.AbstractDomainObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.data.repository.CrudRepository;
@@ -10,13 +9,13 @@ import java.io.Serializable;
 /**
  * User: gawain
  */
-public class CommonRepository {
+public class DomainRepository {
 
     @Autowired
     ApplicationContext ctx;
 
-    public AbstractDomainObject findOne(Class aClass, Serializable id) {
-         AbstractDomainObject o = (AbstractDomainObject) getCrudRepository(aClass).findOne(id.toString());
+    public Object findOne(Class aClass, Serializable id) {
+         Object o = (Object) getCrudRepository(aClass).findOne(id.toString());
         return o;
     }
 

@@ -9,5 +9,5 @@ import com.netaporter.eventinator.model.DomainObject;
  */
 public interface CommandFactory {
 
-    public Command createCommand(Event event, DomainObject domainObject);
+    public Command createCommand(Event event, Object domainObject);
 }

@@ -1,13 +1,12 @@
 package com.netaporter.eventinator.service;
 
+import com.netaporter.eventinator.test.customer.events.DeleteCustomerEvent;
 import com.netaporter.eventinator.factory.GenericCommandFactory;
-import com.netaporter.eventinator.repos.CommonRepository;
+import com.netaporter.eventinator.repos.DomainRepository;
 import com.netaporter.eventinator.repos.EventRepository;
-import com.netaporter.eventinator.service.GenericEventProcessor;
 import com.netaporter.eventinator.test.customer.builder.CustomerBuilder;
 import com.netaporter.eventinator.test.customer.events.ChangeCustomerEmailEvent;
 import com.netaporter.eventinator.test.customer.events.ChangeCustomerNameEvent;
-import com.netaporter.eventinator.test.customer.events.DeleteCustomerEvent;
 import com.netaporter.eventinator.test.customer.events.NewCustomerEvent;
 import com.netaporter.eventinator.test.customer.model.Customer;
 import org.junit.Before;
@@ -29,7 +28,7 @@ public class GenericEventProcessorUnitTest {
     GenericEventProcessor eventHandler;
     GenericCommandFactory commandFactory;
     StubRepository customerRepository;
-    CommonRepository commonRepository;
+    DomainRepository commonRepository;
     EventRepository eventRepository;
     Customer persistedCustomer;
     Customer newCustomer;
