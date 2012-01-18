@@ -1,8 +1,9 @@
 package com.netaporter.eventinator.factory;
 
+import com.netaporter.eventinator.command.AbstractCommand;
 import com.netaporter.eventinator.command.Command;
+import com.netaporter.eventinator.domain.VersionIncrementor;
 import com.netaporter.eventinator.event.Event;
-import com.netaporter.eventinator.model.DomainObject;
 
 import java.lang.reflect.Constructor;
 
@@ -12,7 +13,7 @@ import java.lang.reflect.Constructor;
 public class GenericCommandFactory implements  CommandFactory {
 
 
-
+    String versionField;
 
     @Override
      public Command createCommand(Event event, Object domainObject) {
@@ -25,6 +26,7 @@ public class GenericCommandFactory implements  CommandFactory {
         try {
             Constructor constructor = aClass.getConstructors()[0];
             Command command = (Command) constructor.newInstance(event, domainObject);
+            if (versionField != null) ((AbstractCommand) command).setIncrementorValue(versionField);
             return command;
         } catch (Exception e) {
             throw new RuntimeException("Cannot use reflection to create command " +
@@ -33,4 +35,7 @@ public class GenericCommandFactory implements  CommandFactory {
         }
     }
 
+    public void setVersionField(String versionField) {
+        this.versionField = versionField;
+    }
 }

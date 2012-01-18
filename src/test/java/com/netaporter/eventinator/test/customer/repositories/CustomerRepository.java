@@ -13,7 +13,7 @@ import java.util.List;
 public interface CustomerRepository extends PagingAndSortingRepository<Customer, String> {
     List<Customer> findByName(String name);
 
-     Customer findById(String id);
+     //Customer findById(String custId);
 
     Customer findByEmailAddress(String emailAddress);
 }

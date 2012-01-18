@@ -33,9 +33,9 @@ public class GenericEventProcessor implements EventProcessor {
     @Autowired
     @Qualifier("eventRepository")
     EventRepository eventRepository;
+      ObjectFieldRetriever<Serializable> idRetriever;
+    ObjectFieldRetriever<Integer> versionRetriever;
 
-    ObjectFieldRetriever<Serializable> idRetriever = new ObjectFieldRetriever<Serializable>("id");
-    ObjectFieldRetriever<Integer> versionRetriever = new ObjectFieldRetriever<Integer>("version");
 
 
 
@@ -105,6 +105,14 @@ public class GenericEventProcessor implements EventProcessor {
 
     public void setEventRepository(EventRepository eventRepository) {
         this.eventRepository = eventRepository;
+    }
+
+    public void setDomainObjectIdField(String idFieldname) {
+         idRetriever = new ObjectFieldRetriever<Serializable>(idFieldname);
+    }
+
+     public void setDomainObjectVersionField(String versionFieldname) {
+         versionRetriever = new ObjectFieldRetriever<Integer>(versionFieldname);
     }
 
 

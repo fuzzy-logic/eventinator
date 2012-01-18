@@ -7,6 +7,16 @@
         http://www.springframework.org/schema/data/mongo
         http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
 
+
+
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:/eventinator.properties</value>
+			</list>
+		</property>
+	</bean>
+
     <mongo:mongo id="mongo"/>
 
 
@@ -20,13 +30,15 @@
     <mongo:repositories base-package="com.netaporter.eventinator.repos" mongo-template-ref="mongoTemplateEvent"/>
 
 
-     <bean id="eventHandler" class="com.netaporter.eventinator.service.GenericEventProcessor">
-            <property name="commandFactory" ref="commandFactory"/>
+    <bean id="eventHandler" class="com.netaporter.eventinator.service.GenericEventProcessor">
+        <property name="commandFactory" ref="commandFactory"/>
+        <property name="domainObjectIdField" value="${domain.object.id.field}"/>
+        <property name="domainObjectVersionField" value="${domain.object.version.field}"/>
     </bean>
 
 
-
-   <bean id="commandFactory" class="com.netaporter.eventinator.factory.GenericCommandFactory">
-   </bean>
+    <bean id="commandFactory" class="com.netaporter.eventinator.factory.GenericCommandFactory">
+        <property name="versionField" value="${domain.object.version.field}"/>
+    </bean>
 
 </beans>

@@ -21,6 +21,9 @@ public class VersionIncrementor<T> {
 
      public void incrementVersion(T object) {
         Field field = ReflectionUtils.findField(object.getClass(), fieldName);
+         if (field == null) {
+             throw new RuntimeException("No field '" + fieldName + "' found on object " + object);
+         }
          ReflectionUtils.makeAccessible(field);
          Integer value = (Integer) ReflectionUtils.getField(field, object);
          ReflectionUtils.setField(field, object, value + 1);

@@ -18,6 +18,11 @@ alter any domain object and you must implement the 'altering' code yourself
 
 5.) Import the EventHandler bean in to your client class (such a a controller)
 
+6.) cearte file eventinator.properties in root of classpath and add these two properties stating the field names on your domain object to use
+ with reflection:
+domain.object.version.field=version
+domain.object.id.field=id
+
 6.) Send event objects from your client class
 
 

@@ -14,7 +14,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -54,7 +53,7 @@ public class GenericEventProcessorIntegrationTest {
         event.setNewPassword("changeme");
         event.setDomainObjectId("123");
         boolean eventOk = customerEventHandler.handleEvent(event);
-        Customer customer = customerRepository.findById("123");
+        Customer customer = customerRepository.findOne("123");
         Assert.assertTrue(eventOk);
         Assert.assertNotNull(customer);
     }
@@ -68,7 +67,7 @@ public class GenericEventProcessorIntegrationTest {
         event.setNewPassword("changeme");
         event.setDomainObjectId("123");
         boolean eventOk = customerEventHandler.handleEvent(event);
-        Customer customer = customerRepository.findById("123");
+        Customer customer = customerRepository.findOne("123");
         Assert.assertTrue(eventOk);
         Assert.assertNotNull(customer);
 
@@ -76,7 +75,7 @@ public class GenericEventProcessorIntegrationTest {
         DeleteCustomerEvent deleteEvent = new DeleteCustomerEvent();
         deleteEvent.setDomainObjectId("123");
         boolean deleteEventOk = customerEventHandler.handleEvent(deleteEvent);
-        customer = customerRepository.findById("123");
+        customer = customerRepository.findOne("123");
         Assert.assertTrue(eventOk);
         Assert.assertNull(customer);
     }
