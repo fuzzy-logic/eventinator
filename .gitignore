@@ -1,0 +1,21 @@
+c preview files
+.DS_Store
+
+# IntelliJ project files
+*.iml
+*.ipr
+*.iws
+.idea
+*.idea
+.idea*
+.DS_Store
+
+# Eclipse project files
+.project
+.springBeans
+.classpath
+MANIFEST.MF
+.settings/
+
+# Target directories
+target
