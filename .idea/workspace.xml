@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6b24d3-4d25-40b2-bcfe-09961a2c092e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/AnnotationHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/DomainId.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/DomainVersion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/domain/AnnotationHelperUnitTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/eventinator/command/AbstractCommand.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/AbstractCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/AbstractCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/ObjectFieldRetriever.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/ObjectFieldRetriever.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/VersionIncrementor.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/VersionIncrementor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/factory/GenericCommandFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/factory/GenericCommandFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/service/GenericEventProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/service/GenericEventProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/domain/ObjectFieldRetrieverUnitTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/domain/ObjectFieldRetrieverUnitTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/builder/CustomerBuilder.java" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/builder/CustomerBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/model/Customer.java" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/test/customer/model/Customer.java" />
     </list>
     <ignored path="eventinator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -162,7 +147,7 @@
       <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="98" selection-start="182" selection-end="182" vertical-scroll-proportion="0.15665796">
+            <state line="17" column="89" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.5874674">
               <folding />
             </state>
           </provider>
@@ -993,7 +978,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1567" y="80" width="1641" height="1027" extended-state="0" />
+    <frame x="1527" y="81" width="1641" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1198,7 +1183,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="98" selection-start="182" selection-end="182" vertical-scroll-proportion="0.15665796">
+        <state line="17" column="89" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.5874674">
           <folding />
         </state>
       </provider>
