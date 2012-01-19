@@ -2,59 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6b24d3-4d25-40b2-bcfe-09961a2c092e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/repos/DefaultDomainRepository.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/HelloWorldController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/RestApiController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/Customer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/builder/Builder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/builder/CustomerBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/commands/AbstractCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/commands/ChangeCustomerEmailCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/commands/ChangeCustomerNameCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/commands/ChangeCustomerPasswordCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/commands/Command.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/commands/DeleteCustomerCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/commands/NewCustomerCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/commands/VersionIncrementor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/events/AbstractCustomerEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/events/AbstractEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/events/ChangeCustomerEmailEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/events/ChangeCustomerNameEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/events/ChangeCustomerPasswordEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/events/DeleteCustomerEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/events/Event.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/events/EventComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/events/NewCustomerEvent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/factory/CommandFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/factory/GenericCommandFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/model/AbstractDomainObject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/model/DomainObject.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/repositories/CommonRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/repositories/CustomerRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/service/EventProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/customer/service/GenericEventProcessor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/customerservice/events/repository/EventRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring/domain-customer-data.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring/spring-data.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring/spring-security.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring/spring-webmvc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/netaporter/customerservice/customer/CustomerTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/netaporter/customerservice/customer/commands/VersionIncrementorTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/netaporter/customerservice/customer/events/EventComparatorUnitTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/netaporter/customerservice/customer/repository/EventRepositoryIntegrationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/netaporter/customerservice/customer/service/GenericEventProcessorIntegrationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/netaporter/customerservice/customer/service/GenericEventProcessorUnitTest$StubRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/netaporter/customerservice/customer/service/GenericEventProcessorUnitTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/Command.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/repos/DomainRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/repos/DomainRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/service/GenericEventProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/service/GenericEventProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/repos/EventRepositoryIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/repos/EventRepositoryIntegrationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorIntegrationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorUnitTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorUnitTest.java" />
     </list>
     <ignored path="eventinator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -165,10 +113,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventRepositoryIntegrationTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EventRepositoryIntegrationTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/repos/EventRepositoryIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="71" selection-start="767" selection-end="767" vertical-scroll-proportion="0.076719575">
+            <state line="20" column="71" selection-start="767" selection-end="767" vertical-scroll-proportion="-1.16">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="1" selection-start="1544" selection-end="1544" vertical-scroll-proportion="0.64748204">
               <folding />
             </state>
           </provider>
@@ -206,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/VersionIncrementor.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/domain/ObjectFieldRetrieverUnitTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml" />
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorIntegrationTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/Command.java" />
@@ -215,6 +171,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/service/GenericEventProcessor.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorUnitTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/repos/EventRepositoryIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -899,10 +856,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1541" y="71" width="1641" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="1555" y="67" width="1641" height="1027" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893288" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -915,9 +872,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19095477" sideWeight="0.47524753" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24497488" sideWeight="0.47524753" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24497488" sideWeight="0.6710671" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5247525" sideWeight="0.9993719" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5247525" sideWeight="0.9993719" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1034,13 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="105" selection-start="661" selection-end="661" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="34" selection-start="379" selection-end="379" vertical-scroll-proportion="7.2">
@@ -1100,7 +1050,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/repos/EventRepositoryIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="71" selection-start="767" selection-end="767" vertical-scroll-proportion="0.076719575">
+        <state line="20" column="71" selection-start="767" selection-end="767" vertical-scroll-proportion="-1.16">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="1" selection-start="1544" selection-end="1544" vertical-scroll-proportion="0.64748204">
           <folding />
         </state>
       </provider>
