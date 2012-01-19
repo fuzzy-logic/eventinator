@@ -58,6 +58,11 @@ public class CustomerBuilder implements Builder<Customer> {
         return this;
     }
 
+    public CustomerBuilder setVersion(int version) {
+        this.version = version;
+         return this;
+    }
+
     public CustomerBuilder setDeleted(boolean isDeleted) {
         this.deleted = isDeleted;
         return this;

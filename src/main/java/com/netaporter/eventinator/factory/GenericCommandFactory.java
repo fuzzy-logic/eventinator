@@ -26,7 +26,6 @@ public class GenericCommandFactory implements  CommandFactory {
         try {
             Constructor constructor = aClass.getConstructors()[0];
             Command command = (Command) constructor.newInstance(event, domainObject);
-            if (versionField != null) ((AbstractCommand) command).setIncrementorValue(versionField);
             return command;
         } catch (Exception e) {
             throw new RuntimeException("Cannot use reflection to create command " +

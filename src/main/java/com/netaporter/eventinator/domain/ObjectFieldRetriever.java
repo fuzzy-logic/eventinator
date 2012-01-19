@@ -9,17 +9,15 @@ import java.lang.reflect.Field;
  */
 public class ObjectFieldRetriever<T> {
 
-    String fieldName;
+    Class annotationType;
 
-    public ObjectFieldRetriever(String idField) {
-        this.fieldName = idField;
+    public ObjectFieldRetriever(Class annotationType) {
+        this.annotationType = annotationType;
     }
 
     public T getFieldValue(Object object) {
-        Field field = ReflectionUtils.findField(object.getClass(), fieldName);
-        ReflectionUtils.makeAccessible(field);
-        Object fieldObject = ReflectionUtils.getField(field, object);
-        return (T) fieldObject;
+        Object value = AnnotationHelper.getAnnotatedFieldValue(object, annotationType);
+        return (T) value;
       }
 
 }

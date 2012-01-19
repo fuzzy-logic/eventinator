@@ -2,7 +2,7 @@ For example useage of this project see GenericEventProcessorIntegrationTest
 
 SETUP
 
-1.) This project needs to persist Event object. By default mongodb is used with spring data.
+1.) This project needs to be able to persist Event objects. By default in eventinator-context.xml mongodb is used with spring data.
 If you are happy to use this setup then just import eventinator-context.xml to your spring application.
 If you wish to use another event datastore you may be able to at your own risk, but it Must implement the
 EventRepository interface and be defined as a psring bean.
@@ -18,10 +18,7 @@ alter any domain object and you must implement the 'altering' code yourself
 
 5.) Import the EventHandler bean in to your client class (such a a controller)
 
-6.) cearte file eventinator.properties in root of classpath and add these two properties stating the field names on your domain object to use
- with reflection:
-domain.object.version.field=version
-domain.object.id.field=id
+6.) annotate your domain object's id and version fields with @DomainId and @DomainVersion
 
 6.) Send event objects from your client class
 

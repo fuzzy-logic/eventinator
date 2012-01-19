@@ -1,6 +1,8 @@
 package com.netaporter.eventinator.service;
 
 import com.netaporter.eventinator.command.Command;
+import com.netaporter.eventinator.domain.DomainId;
+import com.netaporter.eventinator.domain.DomainVersion;
 import com.netaporter.eventinator.domain.ObjectFieldRetriever;
 import com.netaporter.eventinator.event.AbstractEvent;
 import com.netaporter.eventinator.event.Event;
@@ -33,8 +35,8 @@ public class GenericEventProcessor implements EventProcessor {
     @Autowired
     @Qualifier("eventRepository")
     EventRepository eventRepository;
-      ObjectFieldRetriever<Serializable> idRetriever;
-    ObjectFieldRetriever<Integer> versionRetriever;
+      ObjectFieldRetriever<Serializable> idRetriever = new ObjectFieldRetriever<Serializable>(DomainId.class);
+    ObjectFieldRetriever<Integer> versionRetriever= new ObjectFieldRetriever<Integer>(DomainVersion.class);
 
 
 
@@ -107,13 +109,7 @@ public class GenericEventProcessor implements EventProcessor {
         this.eventRepository = eventRepository;
     }
 
-    public void setDomainObjectIdField(String idFieldname) {
-         idRetriever = new ObjectFieldRetriever<Serializable>(idFieldname);
-    }
 
-     public void setDomainObjectVersionField(String versionFieldname) {
-         versionRetriever = new ObjectFieldRetriever<Integer>(versionFieldname);
-    }
 
 
 }

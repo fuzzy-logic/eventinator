@@ -1,7 +1,11 @@
 package com.netaporter.eventinator.domain;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
 /**
  * User: gawain
  */
-public class DomainVersion {
+@Retention(RetentionPolicy.RUNTIME)
+public  @interface DomainVersion {
 }

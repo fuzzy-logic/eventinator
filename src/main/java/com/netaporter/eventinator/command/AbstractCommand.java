@@ -10,7 +10,7 @@ public abstract class AbstractCommand<E extends Event, O> implements Command<O> 
 
     private final E event;
     private final O domainObject;
-    VersionIncrementor incrementor;
+    VersionIncrementor incrementor = new VersionIncrementor();
 
 /*    public AbstractCommand() {
       event = null;
@@ -46,7 +46,5 @@ public abstract class AbstractCommand<E extends Event, O> implements Command<O> 
 
     protected abstract O applyCommand(E event, O domainObject);
 
-    public void setIncrementorValue(String fieldName) {
-        this.incrementor = new VersionIncrementor(fieldName);
-    }
+
 }

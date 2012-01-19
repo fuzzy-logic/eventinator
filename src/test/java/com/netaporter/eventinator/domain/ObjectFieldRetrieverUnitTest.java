@@ -17,7 +17,7 @@ public class ObjectFieldRetrieverUnitTest {
     @Test
     public void test() {
          String id = "123";
-         ObjectFieldRetriever<Serializable> objectFieldRetriever = new ObjectFieldRetriever("id");
+         ObjectFieldRetriever<Serializable> objectFieldRetriever = new ObjectFieldRetriever(DomainId.class);
 
         CustomerBuilder builder = CustomerBuilder.create("testname", "password", "test@test.com");
         builder.setId(id);

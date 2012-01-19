@@ -1,6 +1,8 @@
 package com.netaporter.eventinator.test.customer.model;
 
 
+import com.netaporter.eventinator.domain.DomainId;
+import com.netaporter.eventinator.domain.DomainVersion;
 import com.netaporter.eventinator.test.customer.builder.CustomerBuilder;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
@@ -17,7 +19,9 @@ public class Customer {
 
     @Indexed(unique = true)
      @Id
+    @DomainId
     protected Serializable id;
+    @DomainVersion
     protected int version;
     protected boolean deleted = false;
     private final String emailAddress;
