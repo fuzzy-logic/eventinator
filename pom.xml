@@ -6,7 +6,7 @@
     <groupId>com.netaporter</groupId>
     <artifactId>eventinator</artifactId>
     <packaging>jar</packaging>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1</version>
     <name>NET-A-PORTER Eventinator</name>
 
 
@@ -18,11 +18,11 @@
 
     <dependencies>
 
-        <dependency>
+       <!-- <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
             <version>2.2.2</version>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -54,12 +54,12 @@
             </exclusions>
         </dependency>
 
-        <dependency>
+       <!-- <dependency>
             <groupId>org.codehaus.jackson</groupId>
             <artifactId>jackson-mapper-asl</artifactId>
             <version>1.9.3</version>
         </dependency>
-
+-->
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-mongodb</artifactId>
@@ -84,7 +84,7 @@
             </exclusions>
         </dependency>
 
-        <dependency>
+     <!--   <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
             <version>${spring.security.version}</version>
@@ -94,7 +94,7 @@
             <artifactId>spring-security-config</artifactId>
             <version>${spring.security.version}</version>
         </dependency>
-
+-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

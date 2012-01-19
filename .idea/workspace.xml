@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f6b24d3-4d25-40b2-bcfe-09961a2c092e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/DeletedDomainWrapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/eventinator/domain/DeletedDomainWrapper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/eventinator/domain/DeletedDomainWrapper$DeletedDomainWrapperCgLib.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/netaporter/eventinator/domain/DeletedDomainWrapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/eventinator-0.1-SNAPSHOT.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml" />
     </list>
     <ignored path="eventinator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,10 +129,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="1" selection-start="1544" selection-end="1544" vertical-scroll-proportion="0.64748204">
+            <state line="14" column="25" selection-start="966" selection-end="966" vertical-scroll-proportion="-8.4">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="94" column="35" selection-start="3352" selection-end="3352" vertical-scroll-proportion="-4.8">
+              <folding>
+                <marker date="1326974169000" expanded="true" signature="2977:3174" placeholder="..." />
+                <marker date="1326974169000" expanded="true" signature="3195:3395" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eventinator-context.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml">
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="7" selection-start="758" selection-end="758" vertical-scroll-proportion="0.8231511">
               <folding />
             </state>
           </provider>
@@ -162,9 +193,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/ObjectFieldRetriever.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/VersionIncrementor.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/domain/ObjectFieldRetrieverUnitTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorIntegrationTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/command/Command.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/repos/DomainRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/repos/DefaultDomainRepository.java" />
@@ -172,6 +201,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorUnitTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/repos/EventRepositoryIntegrationTest.java" />
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml" />
       </list>
     </option>
   </component>
@@ -506,6 +537,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="repos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventinator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -856,10 +917,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1555" y="67" width="1641" height="1027" extended-state="0" />
-    <editor active="false" />
+    <frame x="1548" y="84" width="1641" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893288" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -872,9 +933,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19095477" sideWeight="0.47524753" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24497488" sideWeight="0.6710671" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24497488" sideWeight="0.47524753" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5247525" sideWeight="0.9993719" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5247525" sideWeight="0.9993719" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -981,35 +1042,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="9" selection-start="1386" selection-end="1386" vertical-scroll-proportion="-5.106383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="34" selection-start="379" selection-end="379" vertical-scroll-proportion="7.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/netaporter/eventinator/service/GenericEventProcessorIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="45" selection-start="1266" selection-end="1266" vertical-scroll-proportion="-5.08">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/netaporter/eventinator/domain/DeletedDomainWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="65" selection-start="564" selection-end="564" vertical-scroll-proportion="-3.88">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1057,7 +1092,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="1" selection-start="1544" selection-end="1544" vertical-scroll-proportion="0.64748204">
+        <state line="14" column="25" selection-start="966" selection-end="966" vertical-scroll-proportion="-8.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="35" selection-start="3352" selection-end="3352" vertical-scroll-proportion="-4.8">
+          <folding>
+            <marker date="1326974169000" expanded="true" signature="2977:3174" placeholder="..." />
+            <marker date="1326974169000" expanded="true" signature="3195:3395" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/eventinator-context.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="7" selection-start="758" selection-end="758" vertical-scroll-proportion="0.8231511">
           <folding />
         </state>
       </provider>
