@@ -18,7 +18,7 @@ import java.util.Date;
  * User: gawain
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "classpath:spring/spring-data.xml")
+@ContextConfiguration(locations = "classpath:spring/eventinator-context.xml")
 public class EventRepositoryIntegrationTest {
 
     @Autowired

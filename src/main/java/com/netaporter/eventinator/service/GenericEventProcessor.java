@@ -7,8 +7,9 @@ import com.netaporter.eventinator.domain.ObjectFieldRetriever;
 import com.netaporter.eventinator.event.AbstractEvent;
 import com.netaporter.eventinator.event.Event;
 import com.netaporter.eventinator.factory.CommandFactory;
-import com.netaporter.eventinator.repos.DomainRepository;
+import com.netaporter.eventinator.repos.DefaultDomainRepository;
 import com.netaporter.eventinator.event.EventComparator;
+import com.netaporter.eventinator.repos.DomainRepository;
 import com.netaporter.eventinator.repos.EventRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,7 +36,8 @@ public class GenericEventProcessor implements EventProcessor {
     @Autowired
     @Qualifier("eventRepository")
     EventRepository eventRepository;
-      ObjectFieldRetriever<Serializable> idRetriever = new ObjectFieldRetriever<Serializable>(DomainId.class);
+
+    ObjectFieldRetriever<Serializable> idRetriever = new ObjectFieldRetriever<Serializable>(DomainId.class);
     ObjectFieldRetriever<Integer> versionRetriever= new ObjectFieldRetriever<Integer>(DomainVersion.class);
 
 

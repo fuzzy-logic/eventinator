@@ -19,7 +19,8 @@ alter any domain object and you must implement the 'mutating' code yourself in t
 
 5.) Import the EventHandler bean in to your client class (such a a controller)
 
-6.) annotate your domain object's id and version fields with @DomainId and @DomainVersion
+6.) annotate your domain object's id and version fields with @DomainId and @DomainVersion  so the framework can
+automatically increment the version number, and obtain the domain object's ID for persistence retrieval.
 
 6.) Send event objects from your client class
 

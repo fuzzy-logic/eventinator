@@ -20,7 +20,7 @@
     <mongo:mongo id="mongo"/>
 
 
-    <bean id="domainRepository" class="com.netaporter.eventinator.repos.DomainRepository"></bean>
+    <bean id="domainRepository" class="com.netaporter.eventinator.repos.DefaultDomainRepository"></bean>
 
     <bean id="mongoTemplateEvent" class="org.springframework.data.mongodb.core.MongoTemplate">
         <constructor-arg name="databaseName" value="eventdb"/>

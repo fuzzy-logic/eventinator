@@ -1,8 +1,9 @@
 package com.netaporter.eventinator.service;
 
+import com.netaporter.eventinator.repos.DomainRepository;
 import com.netaporter.eventinator.test.customer.events.DeleteCustomerEvent;
 import com.netaporter.eventinator.factory.GenericCommandFactory;
-import com.netaporter.eventinator.repos.DomainRepository;
+import com.netaporter.eventinator.repos.DefaultDomainRepository;
 import com.netaporter.eventinator.repos.EventRepository;
 import com.netaporter.eventinator.test.customer.builder.CustomerBuilder;
 import com.netaporter.eventinator.test.customer.events.ChangeCustomerEmailEvent;
@@ -11,6 +12,8 @@ import com.netaporter.eventinator.test.customer.events.NewCustomerEvent;
 import com.netaporter.eventinator.test.customer.model.Customer;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Matchers;
+import org.mockito.Mockito;
 import org.springframework.data.repository.CrudRepository;
 
 import static org.junit.Assert.*;
@@ -27,8 +30,8 @@ public class GenericEventProcessorUnitTest {
 
     GenericEventProcessor eventHandler;
     GenericCommandFactory commandFactory;
-    StubRepository customerRepository;
-    DomainRepository commonRepository;
+    CrudRepository customerRepository;
+    StubDomainRepository domainRepository;
     EventRepository eventRepository;
     Customer persistedCustomer;
     Customer newCustomer;
@@ -38,12 +41,14 @@ public class GenericEventProcessorUnitTest {
     public void setup() {
         persistedCustomer = CustomerBuilder.create("name", "password", "email").setId(currentId).build();
         eventHandler = new GenericEventProcessor();
-        customerRepository = new StubRepository();
+        customerRepository = mock(CrudRepository.class);
         eventRepository = mock(EventRepository.class);
         commandFactory = new GenericCommandFactory();
+        domainRepository = new StubDomainRepository();
+
 
         eventHandler.setCommandFactory(commandFactory);
-        eventHandler.setDomainObjectRepository(commonRepository);
+        eventHandler.setDomainObjectRepository(domainRepository);
         eventHandler.setEventRepository(eventRepository);
 
     }
@@ -144,39 +149,38 @@ public class GenericEventProcessorUnitTest {
 
         assertTrue(eventStatus);
         verify(eventRepository).save(changeCustomerEvent);
+        assertTrue(domainRepository.deleteCalled);
         assertNotSame(newCustomer, persistedCustomer);
-        assertEquals(persistedCustomer.getId(), newCustomer.getId());
-        assertEquals(persistedCustomer.getName(), newCustomer.getName());
-        assertEquals(persistedCustomer.getEmailAddress(), newCustomer.getEmailAddress());
-        assertEquals(persistedCustomer.getPassword(), newCustomer.getPassword());
-        assertTrue(newCustomer.isDeleted());
+        assertNull(newCustomer);
+        assertEquals(persistedCustomer.getId(), domainRepository.deletedId);
+        assertEquals(persistedCustomer.getClass(), domainRepository.deletedClass);
+
     }
 
-    public class StubRepository implements CrudRepository<Customer, Serializable> {
 
-        public boolean savedCalled = false;
 
-        public Customer save(Customer customer) {
-            newCustomer = customer;
-            return customer;
-        }
+    public class StubDomainRepository implements DomainRepository {
 
-        public Customer findOne(Serializable serializable) {
+        public boolean deleteCalled = false;
+        public Class deletedClass;
+        public Serializable deletedId;
+
+        @Override
+        public Object findOne(Class aClass, Serializable id) {
             return persistedCustomer;
         }
 
-        public Iterable<Customer> save(Iterable<? extends Customer> iterable) { this.savedCalled = true;   return null;  }
-        public boolean exists(Serializable serializable) {   return false;  }
-        public Iterable<Customer> findAll() {  return null;  }
-        public long count() {  return 0; }
-        public void delete(Serializable serializable) { }
-        public Customer findOne(String s) {  return null; }
-        public boolean exists(String s) {  return false;  }
-        public void delete(String s) {  }
-        public void delete(Customer customer) {  }
-        public void delete(Iterable<? extends Customer> iterable) {   }
-        public void deleteAll() {   }
+        @Override
+        public void delete(Class aClass, Serializable id) {
+            deleteCalled = true;
+            deletedClass  = aClass;
+            deletedId = id;
 
+        }
 
+        @Override
+        public void save(Object object) {
+            newCustomer = (Customer) object;
+        }
     }
 }

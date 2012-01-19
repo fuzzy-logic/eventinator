@@ -31,7 +31,7 @@ public class GenericEventProcessorIntegrationTest {
 
     @Autowired
     //@Qualifier("customerRepository")
-            CustomerRepository customerRepository;
+    CustomerRepository customerRepository;
 
     @Autowired
     @Qualifier("eventRepository")

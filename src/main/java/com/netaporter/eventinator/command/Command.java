@@ -1,6 +1,5 @@
 package com.netaporter.eventinator.command;
 
-import com.netaporter.customerservice.customer.Customer;
 
 /**
  * User: gawain
