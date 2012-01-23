@@ -33,7 +33,7 @@ public class CustomerBuilder implements Builder<Customer> {
         builder.email = customer.getEmailAddress();
         builder.password = customer.getPassword();
         builder.version = customer.getVersion();
-        builder.deleted = customer.isDeleted();
+        builder.deleted = false;
          builder.dob = customer.getDob();
         return builder;
     }

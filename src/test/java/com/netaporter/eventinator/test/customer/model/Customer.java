@@ -16,14 +16,10 @@ import java.io.Serializable;
  */
 public class Customer {
 
-
-    @Indexed(unique = true)
-     @Id
-    @DomainId
-    protected Serializable id;
+    @Id @DomainId
+    protected final Serializable id;
     @DomainVersion
-    protected int version;
-    protected boolean deleted = false;
+    protected final int version;
     private final String emailAddress;
     private final String name;
     private final int age;
@@ -31,33 +27,25 @@ public class Customer {
     private final String  dob;
 
     public Customer() {
+        this.id = null;
         this.emailAddress = null;
         this.name = null;
         this.age = 0;
         this.password = null;
         this.dob = null;
+        this.version = -1;
     }
 
-    public Customer(String emailAddress, String name, int age) {
 
-        this.emailAddress = emailAddress;
-        this.name = name;
-        this.age = age;
-        this.dob = null;
-        this.password = null;
-        this.deleted = false;
-        this.version = 0;
-    }
 
     public Customer(CustomerBuilder builder) {
-        this.id = builder.getId();
+       this.id = builder.getId();
        this.emailAddress = builder.getEmail();
-        this.name = builder.getName();
-        this.dob = builder.getDob();
-        this.password = builder.getPassword();
-        this.age = 0;
-        this.deleted = builder.getDeleted();
-        this.version = builder.getVersion();
+       this.name = builder.getName();
+       this.dob = builder.getDob();
+       this.password = builder.getPassword();
+       this.age = 0;
+       this.version = builder.getVersion();
     }
 
     public String getName() {
@@ -83,11 +71,6 @@ public class Customer {
     public int getVersion() {
         return version;
     }
-
-    public boolean isDeleted() {
-        return deleted;
-    }
-
 
     public Serializable getId() {
         return id;
