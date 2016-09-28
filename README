@@ -1,6 +1,10 @@
-For example useage of this project see GenericEventProcessorIntegrationTest
 
-SETUP
+# Adventures in CQRS
+
+
+## For example useage of this project see GenericEventProcessorIntegrationTest
+
+### SETUP
 
 1.) This project needs to be able to persist Event objects. By default in eventinator-context.xml mongodb is used
 with spring data. If you are happy to use this setup then just import eventinator-context.xml to your spring application.
